@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 /**
- * main - main block
- * Return: 0
- */
+* main - entry point
+*
+*Return: 0 after printing the function
+*/
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+char str1[] = "\"Programming is like building a multilingual puzzle";
+puts(str1);
+return (0);
 }
-
