@@ -1,5 +1,4 @@
 #include "main.h"
-
 #define BUFFER_SIZE 1024
 /**
  * close_w - close function
@@ -17,7 +16,6 @@ void close_w(int fdread, int fdwrite)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdread);
 		exit(100); }
 }
-
 /**
  * main - Function that copies the content of a file to another file
  * @argc: argument of count
@@ -30,7 +28,6 @@ int main(int argc, char *argv[])
 	char *file_from, *file_to;
 	int fdread, fdwrite;
 	ssize_t rd = 1024, wr;
-
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
